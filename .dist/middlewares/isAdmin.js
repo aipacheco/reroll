@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isSuperAdmin = void 0;
-const isSuperAdmin = (req, res, next) => {
+exports.isAdmin = void 0;
+const isAdmin = (req, res, next) => {
     try {
-        if (req.tokenData.role !== "super_admin") {
+        if (req.tokenData.role !== "admin") {
             return res.status(401).json({
                 success: false,
                 message: "UNAUTHORIZED",
@@ -18,4 +18,4 @@ const isSuperAdmin = (req, res, next) => {
         });
     }
 };
-exports.isSuperAdmin = isSuperAdmin;
+exports.isAdmin = isAdmin;

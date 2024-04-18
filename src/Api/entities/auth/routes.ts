@@ -5,6 +5,7 @@ import { isAdmin } from "../../middlewares/isAdmin"
 
 const authRouter = express.Router()
 
-
+authRouter.post("/register", Controller.register)
+authRouter.post("/login", Controller.login)
 
 export default authRouter

@@ -15,14 +15,22 @@ const UserSchema = new mongoose_1.Schema({
     password: {
         type: String,
         required: true,
-        select: false // Esto hace que la contraseña no se devuelva por defecto
+        select: false,
+    },
+    name: {
+        type: String,
+    },
+    lastName: {
+        type: String,
     },
     role: {
         type: String,
-        enum: ["user", "admin", "super_admin"],
+        enum: ["user", "admin"],
         default: "user",
     },
-    // post:[]
+    chats: [{ type: mongoose_1.Types.ObjectId, ref: "Chat" }],
+    saved: [{ type: mongoose_1.Types.ObjectId, ref: "Game" }],
+    address: [{ type: mongoose_1.Types.ObjectId, ref: "Address" }],
 }, {
     timestamps: true,
     versionKey: false,
