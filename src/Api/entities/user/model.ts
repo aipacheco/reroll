@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose"
+import { Schema, Types, model } from "mongoose"
 
 const UserSchema = new Schema(
   {
@@ -15,14 +15,22 @@ const UserSchema = new Schema(
     password: {
       type: String,
       required: true,
-      select: false // Esto hace que la contraseña no se devuelva por defecto
+      select: false, 
+    },
+    name: {
+      type: String,
+    },
+    lastName: {
+      type: String,
     },
     role: {
       type: String,
       enum: ["user", "admin"],
       default: "user",
     },
-
+    chats: [{ type: Types.ObjectId, ref: "Chat" }],
+    saved: [{ type: Types.ObjectId, ref: "Game" }],
+    address: [{ type: Types.ObjectId, ref: "Address" }],
   },
   {
     timestamps: true,

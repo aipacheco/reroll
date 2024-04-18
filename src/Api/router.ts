@@ -1,9 +1,8 @@
-import  {  Router } from "express"
-// import authRouter from "./entities/auth/routes"
-
+import { Router } from "express"
+import authRouter from "./entities/auth/routes"
 
 const router = Router()
 
-// router.use("/auth", authRouter)
+router.use("/auth", authRouter)
 
 export default router
