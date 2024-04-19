@@ -35,4 +35,33 @@ export const register = async (request: Request, response: Response) => {
   }
 }
 
-export const login = async (request: Request, response: Response) => {}
+export const login = async (request: Request, response: Response) => {
+  const { body } = request
+  const { email, password } = body
+  if (!email || !password) {
+    return response.status(400).json({
+      success: false,
+      message: "Debe introducir todos los datos",
+    })
+  }
+  try {
+    const data = await Service.login(body)
+    // const {token, error} = data
+    // console.log("en controller ", data)
+    if (data?.token) {
+      return response.status(201).json({
+        message: "Login correcto",
+        token: data?.token,
+      })
+    }
+    if (data?.error) {
+      return response.status(400).json({
+        message: data?.error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      message: error,
+    })
+  }
+}

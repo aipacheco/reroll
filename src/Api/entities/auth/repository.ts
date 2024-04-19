@@ -14,4 +14,16 @@ export const register = async (newUser: UserData) => {
   return { user: userCreated }
 }
 
-export const login = async () => {}
+export const login = async (email: string) => {
+  const findEmail = await User.findOne({ email: email })
+    .select("+password")
+    .select("+role")
+    .exec()
+  if (!findEmail) {
+    return { error: "Email no encontrado" }
+  }
+  // if (!findEmail.isActive) {
+  //   return { error: "Usuario inactivo" }
+  // }
+  return { user: findEmail }
+}
