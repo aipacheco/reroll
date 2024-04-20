@@ -15,8 +15,10 @@ export const createCategory = async (request: Request, response: Response) => {
     if (error) {
       return response.status(400).json({
         success: false,
-        //para devolver solo el mensaje accediendo directamente a invalid
+        /*para devolver solo el mensaje accediendo directamente a invalid
+        porque se ha creado así en services*/
         message: details?.invalid,
+        error:error
       })
     }
   } catch (error) {
