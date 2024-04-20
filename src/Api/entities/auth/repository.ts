@@ -11,7 +11,7 @@ export const register = async (newUser: UserData) => {
     return { error: "Nombre de usuario ya en uso" }
   }
   const userCreated = await User.create(newUser)
-  return { user: userCreated }
+  return { data: userCreated }
 }
 
 export const login = async (email: string) => {

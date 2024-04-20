@@ -1,5 +1,4 @@
 import { UserData } from "../../types"
-import { Request } from "express"
 
 export const validateUser = (request: UserData) => {
   const { username, email, password } = request

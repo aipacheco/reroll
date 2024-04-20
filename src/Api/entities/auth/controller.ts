@@ -4,29 +4,25 @@ import * as Service from "./services"
 export const register = async (request: Request, response: Response) => {
   const { body } = request
   try {
-    const { user, error } = await Service.register(body)
-    if (user) {
-      const userToReturn = {
-        username: user.username,
-        email: user.email,
-      }
-      return response.status(201).json({
-        success: true,
-        data: userToReturn,
-        message: "Usuario creado correctamente",
-      })
-    }
+    const { data, error, details } = await Service.register(body)
     if (error) {
       return response.status(400).json({
         success: false,
-        data: user,
         message: error,
+        details, 
       })
     }
+    return response.status(201).json({
+      success: true,
+      data,
+      message: "Usuario creado correctamente",
+    })
   } catch (error) {
+    // Manejo de posibles errores inesperados
     return response.status(500).json({
       success: false,
-      message: error,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
     })
   }
 }
@@ -42,8 +38,6 @@ export const login = async (request: Request, response: Response) => {
   }
   try {
     const data = await Service.login(body)
-    // const {token, error} = data
-    // console.log("en controller ", data)
     if (data?.token) {
       return response.status(201).json({
         success: true,

@@ -14,6 +14,11 @@ export type GameData = {
   playersMin: number
   playersMax: number
 }
+
+export type DataOrError ={
+  data?: object
+  error?: string
+}
 declare global {
   // Express
   namespace Express {
