@@ -15,9 +15,8 @@ export const createCategory = async (request: Request, response: Response) => {
     if (error) {
       return response.status(400).json({
         success: false,
-        data,
-        message: error,
-        details,
+        //para devolver solo el mensaje accediendo directamente a invalid
+        message: details?.invalid,
       })
     }
   } catch (error) {
