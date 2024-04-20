@@ -8,6 +8,12 @@ export type UserData = {
   email: string
   password: string
 }
+
+export type GameData = {
+  name: string
+  playersMin: number
+  playersMax: number
+}
 declare global {
   // Express
   namespace Express {

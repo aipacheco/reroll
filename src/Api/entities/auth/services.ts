@@ -6,6 +6,7 @@ import Jwt from "jsonwebtoken"
 
 export const register = async (body: UserData) => {
   const userErrors = validateUser(body)
+  //comprobar que no contenga nada, si contiene algo mandar error 
   const { username, email, password } = body
   const passEncript: string = bcrypt.hashSync(password, 12)
   const newUser = {

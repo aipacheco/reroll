@@ -7,7 +7,6 @@ const CategorySchema = new Schema(
       required: false,
       unique: true,
     },
-   
   },
 )
 
