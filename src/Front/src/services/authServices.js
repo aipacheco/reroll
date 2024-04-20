@@ -1,4 +1,4 @@
-const URL = "https://h8ter.zeabur.app/api/auth"
+const URL = import.meta.env.VITE_BACKEND_URL + "/auth"
 
 export const RegisterUser = async (user) => {
   try {
@@ -34,4 +34,3 @@ export const LoginUser = async (user) => {
     throw error
   }
 }
-
