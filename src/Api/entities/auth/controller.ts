@@ -9,7 +9,7 @@ export const register = async (request: Request, response: Response) => {
       return response.status(400).json({
         success: false,
         message: error,
-        details, 
+        details,
       })
     }
     return response.status(201).json({

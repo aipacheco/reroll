@@ -6,5 +6,5 @@ export const createCategory = async (name: string) => {
     return { error: "La categoría ya existe" }
   }
   const categoryCreated = await Category.create({name:name})
-  return { category: categoryCreated }
+  return { data: categoryCreated }
 }
