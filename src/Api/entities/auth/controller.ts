@@ -18,7 +18,6 @@ export const register = async (request: Request, response: Response) => {
       message: "Usuario creado correctamente",
     })
   } catch (error) {
-    // Manejo de posibles errores inesperados
     return response.status(500).json({
       success: false,
       message: "Error interno del servidor",

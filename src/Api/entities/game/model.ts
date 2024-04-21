@@ -12,6 +12,7 @@ const GameSchema = new Schema(
     playersMax: {
       type: Number,
     },
+    images: [{ type: String }],
     category: { type: Types.ObjectId, ref: "Category" },
   },
   {
