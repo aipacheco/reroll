@@ -2,9 +2,17 @@ import { Schema, Types, model } from "mongoose"
 
 const GameSchema = new Schema(
   {
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
     name: {
       type: String,
       required: true,
+    },
+    description: {
+      type: String,
     },
     playersMin: {
       type: Number,
@@ -12,7 +20,10 @@ const GameSchema = new Schema(
     playersMax: {
       type: Number,
     },
-    images: [{ type: String }],
+    image1: { type: String },
+    image2: { type: String },
+    image3: { type: String },
+    price: { type: Number, required: true },
     category: { type: Types.ObjectId, ref: "Category" },
   },
   {

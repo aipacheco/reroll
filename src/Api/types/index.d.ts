@@ -13,15 +13,24 @@ export type UserData = {
 
 export type GameData = {
   name: string
+  description: string
   playersMin: number
   playersMax: number
+  price: number
   category: ObjectId
 }
 
 export type Files = {
-  images: Express.Multer.File[]
+  image1: Express.Multer.File[]
+  image2: Express.Multer.File[]
+  image3: Express.Multer.File[]
 }
-export type DataOrError ={
+
+interface Image {
+  path: string;
+}
+
+export type DataOrError = {
   data?: object
   error?: string
 }

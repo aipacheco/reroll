@@ -9,6 +9,20 @@ const upload = multer({ storage: storage })
 
 const gameRouter = express.Router()
 
-gameRouter.post("/", upload.fields([{ name: 'name', maxCount: 1 },{ name: 'playersMin', maxCount: 1 },{ name: 'playersMax', maxCount: 1 }, { name: 'images', maxCount: 3 }]),Controller.createGame)
+gameRouter.post(
+  "/",
+  upload.fields([
+    { name: "name", maxCount: 1 },
+    { name: "description", maxCount: 1 },
+    { name: "playersMin", maxCount: 1 },
+    { name: "playersMax", maxCount: 1 },
+    { name: "image1", maxCount: 1 },
+    { name: "image2", maxCount: 1 },
+    { name: "image3", maxCount: 1 },
+    { name: "price", maxCount: 1 },
+  ]),
+  auth,
+  Controller.createGame
+)
 
 export default gameRouter

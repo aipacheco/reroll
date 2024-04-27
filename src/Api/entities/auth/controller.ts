@@ -51,6 +51,7 @@ export const login = async (request: Request, response: Response) => {
       })
     }
   } catch (error) {
+    console.log(error)
     return response.status(500).json({
       success: false,
       message: error,
