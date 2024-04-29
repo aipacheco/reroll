@@ -15,3 +15,11 @@ export const createCategory = async (body: GameData) => {
   }
   return { data }
 }
+
+export const getAllCategories = async () => {
+  const { data, error } = await Repository.getAllCategories()
+  if (error) {
+    return { error:error }
+  }
+  return { data }
+}

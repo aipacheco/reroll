@@ -6,5 +6,7 @@ import { isAdmin } from "../../middlewares/isAdmin"
 const categoryRouter = express.Router()
 
 categoryRouter.post("/", auth, isAdmin, Controller.createCategory)
+categoryRouter.get("/", Controller.getAllCategories)
+
 
 export default categoryRouter

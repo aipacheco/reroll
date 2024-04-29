@@ -29,3 +29,28 @@ export const createCategory = async (request: Request, response: Response) => {
     })
   }
 }
+export const getAllCategories = async (request: Request, response: Response) => {
+
+  try {
+    const { data, error } = await Services.getAllCategories()
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "no existen categorías",
+        error:error
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}

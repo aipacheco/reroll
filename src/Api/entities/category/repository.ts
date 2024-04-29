@@ -5,6 +5,13 @@ export const createCategory = async (name: string) => {
   if (existingName) {
     return { error: "La categoría ya existe" }
   }
-  const categoryCreated = await Category.create({name:name})
+  const categoryCreated = await Category.create({ name: name })
   return { data: categoryCreated }
+}
+export const getAllCategories = async () => {
+  const categories = await Category.find().exec()
+  if (categories.length === 0) {
+    return { error: "No existen categorías" }
+  }
+  return { data: categories }
 }
