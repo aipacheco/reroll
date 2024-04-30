@@ -1,8 +1,8 @@
 import Game from "../game/model"
 import User from "./model"
 
-export const getProfile = async () => {
-  const userProfile = await User.findOne().select(
+export const getProfile = async (username:string) => {
+  const userProfile = await User.findOne({ username }).select(
     "-password"
   )
   if (!userProfile) {

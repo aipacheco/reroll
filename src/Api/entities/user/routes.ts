@@ -5,6 +5,6 @@ import { isAdmin } from "../../middlewares/isAdmin"
 
 const userRouter = express.Router()
 
-userRouter.get("/:username", auth, Controller.getProfile)
+userRouter.get("/:username", Controller.getProfile)
 
 export default userRouter

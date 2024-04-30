@@ -2,8 +2,9 @@ import { Request, Response } from "express"
 import * as Services from "./services"
 
 export const getProfile = async (request: Request, response: Response) => {
+  const {username} = request.params
   try {
-    const { data, error } = await Services.getProfile()
+    const { data, error } = await Services.getProfile(username)
     if (data) {
       return response.status(200).json({
         success: true,

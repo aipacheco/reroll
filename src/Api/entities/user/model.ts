@@ -18,7 +18,11 @@ const UserSchema = new Schema(
     },
     avatar: {
       type: String,
-      default:"https://asset.cloudinary.com/dptbxi3iu/75e90333d273c14d1a634159cfb7bcf3"
+      default:"https://res.cloudinary.com/dptbxi3iu/image/upload/v1714460936/8e65207aca8751179e10e03c_rw_600_ih2nk1.png"
+    },
+    description: {
+      type: String,
+      default: "¡Hola! Soy nuevo en re:roll!",
     },
     name: {
       type: String,
