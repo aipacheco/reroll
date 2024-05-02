@@ -1,5 +1,6 @@
 import { Request, Response } from "express"
 import * as Services from "./services"
+import { UserFile } from "../../types"
 
 export const getProfile = async (request: Request, response: Response) => {
   const {username} = request.params
@@ -24,5 +25,36 @@ export const getProfile = async (request: Request, response: Response) => {
       message: "Error interno del servidor",
       details: error instanceof Error ? error.message : error,
     })
+  }
+}
+
+export const updateProfile = async (request: Request, response: Response) => {
+  const { username } = request.params
+  const { body } = request
+  const files = request.files as UserFile
+  // console.log(body, userId, files)
+  if (files) {
+    try {
+      const { data, error } = await Services.updateProfile(body,username, files)
+      if (error) {
+        return response.status(400).json({
+          success: false,
+          message: error,
+        })
+      }
+      if (data) {
+        return response.status(201).json({
+          success: true,
+          data,
+          message: "Anuncio creado correctamente",
+        })
+      }
+    } catch (error) {
+      return response.status(500).json({
+        success: false,
+        message: "Error interno del servidor",
+        details: error instanceof Error ? error.message : error,
+      })
+    }
   }
 }

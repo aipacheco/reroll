@@ -12,7 +12,6 @@ export const createGame = async (
   image1: string,
   image2: string,
   image3: string
-  //añadir el id del usuario que hace la venta
 ) => {
   const newGame = await Game.create({
     author: userId,

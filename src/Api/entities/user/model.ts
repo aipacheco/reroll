@@ -18,7 +18,7 @@ const UserSchema = new Schema(
     },
     avatar: {
       type: String,
-      default:"https://res.cloudinary.com/dptbxi3iu/image/upload/v1714460936/8e65207aca8751179e10e03c_rw_600_ih2nk1.png"
+      default:"https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png"
     },
     description: {
       type: String,
@@ -26,9 +26,11 @@ const UserSchema = new Schema(
     },
     name: {
       type: String,
+      default: "",
     },
     lastName: {
       type: String,
+      default: "",
     },
     role: {
       type: String,

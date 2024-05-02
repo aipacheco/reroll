@@ -13,14 +13,6 @@ export const createGame = async (
   const { image1, image2, image3 } = files
 
   // console.log(files)
-  interface Image {
-    fieldname: string
-    originalname: string
-    encoding: string
-    mimetype: string
-    buffer: Buffer
-    size: number
-  }
 
   const uploadImage = async (image: Image[]) => {
     let resultUrl = ""

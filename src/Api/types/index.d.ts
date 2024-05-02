@@ -20,16 +20,31 @@ export type GameData = {
   category: ObjectId
 }
 
+export type UserUpdate ={
+  description: string
+  name: string
+  lastName: string
+}
+
 export type Files = {
   image1: Express.Multer.File[]
   image2: Express.Multer.File[]
   image3: Express.Multer.File[]
 }
 
-interface Image {
-  path: string;
+export type UserFile = {
+  avatar: Express.Multer.File[]
 }
 
+
+export type  Image = {
+  fieldname: string
+  originalname: string
+  encoding: string
+  mimetype: string
+  buffer: Buffer
+  size: number
+}
 export type DataOrError = {
   data?: object
   error?: string
