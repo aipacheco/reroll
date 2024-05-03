@@ -20,8 +20,6 @@ export const getProfile = async (username: string) => {
 export const updateProfile = async (
   username: string,
   description: string,
-  name: string,
-  lastName: string,
   avatarUrl: string
 ) => {
   const userProfile = await User.findOne({ username })
@@ -30,8 +28,6 @@ export const updateProfile = async (
   }
   const profileToUpdate = {
     description,
-    name,
-    lastName,
     avatar: avatarUrl,
   }
   const updatedProfile = await User.findOneAndUpdate(
@@ -39,5 +35,6 @@ export const updateProfile = async (
     profileToUpdate,
     { new: true }
   )
+  // console.log("en repository",updatedProfile)
   return { data: updatedProfile }
 }

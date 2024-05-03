@@ -24,5 +24,6 @@ gameRouter.post(
   auth,
   Controller.createGame
 )
+gameRouter.get("/:id", Controller.getSingleGame)
 
 export default gameRouter

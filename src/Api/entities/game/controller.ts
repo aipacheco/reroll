@@ -32,3 +32,29 @@ export const createGame = async (request: Request, response: Response) => {
     }
   }
 }
+
+export const getSingleGame = async (request: Request, response: Response) => {
+  const { id } = request.params
+  try {
+    const { data, error } = await Service.getSingleGame(id)
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "El juego no existe",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}

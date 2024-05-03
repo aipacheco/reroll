@@ -2,6 +2,7 @@ import { Files, GameData, Image } from "../../types"
 import { v2 as cloudinary } from "cloudinary"
 import { UploadApiResponse } from "cloudinary"
 import * as Repository from "./repository"
+import { getSingle } from '../../../../.history/src/Api/entities/game/controller_20240503090328';
 
 export const createGame = async (
   body: GameData,
@@ -60,4 +61,11 @@ export const createGame = async (
     console.log(error)
     return { error: error }
   }
+}
+export const getSingleGame = async (id: string) => {
+  const { data, error } = await Repository.getSingleGame(id)
+  if (error) {
+    return { error }
+  }
+  return { data }
 }

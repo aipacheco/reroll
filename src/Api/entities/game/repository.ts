@@ -32,3 +32,11 @@ export const createGame = async (
 
   return { data: newGame }
 }
+export const getSingleGame = async (id: string) => {
+  const game = await Game.findById(id).populate('author', 'username')
+  if (!game) {
+    return { error: "Game not found" }
+  }
+  // console.log(game)
+  return { data: game }
+}

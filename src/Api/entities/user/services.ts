@@ -16,37 +16,37 @@ export const updateProfile = async (
   username: string,
   files: UserFile
 ) => {
-  console.log(body)
-  const { description, name, lastName } = body
+//   console.log(body)
+  const { description} = body
   const { avatar } = files
-
   const uploadImage = async (image: Image) => {
     let resultUrl = ""
-    await new Promise((resolve, reject) => {
-      cloudinary.uploader
-        .upload_stream(
-          { resource_type: "auto", folder: "reroll" },
-          (error, result) => {
-            if (error) reject(error)
-            else if (result && result.url) {
-              resultUrl = result.url
-              resolve(resultUrl)
+    if (image) {
+      await new Promise((resolve, reject) => {
+        cloudinary.uploader
+          .upload_stream(
+            { resource_type: "auto", folder: "reroll" },
+            (error, result) => {
+              if (error) reject(error)
+              else if (result && result.url) {
+                resultUrl = result.url
+                resolve(resultUrl)
+              }
             }
-          }
-        )
-        .end(image.buffer)
-    })
+          )
+          .end(image.buffer)
+      })
+    }
     return resultUrl
   }
-
-  const avatarUrl = await uploadImage(avatar[0])
-
+  let avatarUrl
+  if (avatar && Array.isArray(avatar) && avatar.length > 0) {
+    avatarUrl = await uploadImage(avatar[0])
+  }
   const { data, error } = await Repository.updateProfile(
     username,
     description,
-    name,
-    lastName,
-    avatarUrl
+    avatarUrl as string
   )
   if (error) {
     return { error }

@@ -44,6 +44,7 @@ export type  Image = {
   mimetype: string
   buffer: Buffer
   size: number
+  length?: number
 }
 export type DataOrError = {
   data?: object
