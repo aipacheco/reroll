@@ -2,6 +2,19 @@ import { Schema, model } from "mongoose"
 
 const AddressSchema = new Schema(
   {
+    owner: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    lastName: {
+      type: String,
+      required: true,
+    },
     streetAddress : {
       type: String,
       required: true,

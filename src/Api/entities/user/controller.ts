@@ -46,7 +46,7 @@ export const updateProfile = async (request: Request, response: Response) => {
         return response.status(201).json({
           success: true,
           data,
-          message: "Anuncio creado correctamente",
+          message: "Usuario modificado correctamente",
         })
       }
     } catch (error) {

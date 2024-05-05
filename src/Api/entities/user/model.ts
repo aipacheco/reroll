@@ -24,14 +24,6 @@ const UserSchema = new Schema(
       type: String,
       default: "¡Hola! Soy nuevo en re:roll!",
     },
-    name: {
-      type: String,
-      default: "",
-    },
-    lastName: {
-      type: String,
-      default: "",
-    },
     role: {
       type: String,
       enum: ["user", "admin"],
