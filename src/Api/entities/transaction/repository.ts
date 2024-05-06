@@ -9,11 +9,16 @@ export const createTransaction = async (
   buyerId: number
 ) => {
   try {
-    const seller = await Game.findById(body.game).select("author price")
+    const seller = await Game.findById(body.game).select("author")
     if (!seller) {
       return { error: "El juego no existe" }
     }
-    const transaction = new Transaction({ seller: seller, buyer: buyerId })
+    const findPrice = await Game.findById(body.game).select("price")
+    const transaction = new Transaction({
+      seller: seller,
+      price: findPrice?.price,
+      buyer: buyerId,
+    })
     const data = await transaction.save()
     return { data: data }
   } catch (error) {
