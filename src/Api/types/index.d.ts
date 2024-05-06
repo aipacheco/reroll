@@ -1,5 +1,6 @@
 import { ObjectId } from "mongoose"
-import { ty } from '../../../.history/src/Api/types/index.d_20240502095532';
+import { ty } from "../../../.history/src/Api/types/index.d_20240502095532"
+import e from "express"
 
 export type TokenData = {
   userId: number
@@ -21,7 +22,7 @@ export type GameData = {
   category: ObjectId
 }
 
-export type UserUpdate ={
+export type UserUpdate = {
   description: string
 }
 export type AddressData = {
@@ -33,6 +34,9 @@ export type AddressData = {
   province: string
   cp: number
 }
+export type TransactionData = {
+  game: ObjectId
+}
 export type Files = {
   image1: Express.Multer.File[]
   image2: Express.Multer.File[]
@@ -43,8 +47,7 @@ export type UserFile = {
   avatar: Express.Multer.File[]
 }
 
-
-export type  Image = {
+export type Image = {
   fieldname: string
   originalname: string
   encoding: string

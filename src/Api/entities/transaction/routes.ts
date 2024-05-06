@@ -5,6 +5,6 @@ import { isAdmin } from "../../middlewares/isAdmin"
 
 const transactionRouter = express.Router()
 
-
+transactionRouter.post("/", auth, Controller.createTransaction)
 
 export default transactionRouter
