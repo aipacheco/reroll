@@ -36,6 +36,7 @@ export type AddressData = {
 }
 export type TransactionData = {
   game: ObjectId
+  address: ObjectId
 }
 export type Files = {
   image1: Express.Multer.File[]
@@ -68,3 +69,5 @@ declare global {
     }
   }
 }
+
+declare module 'node-mailjet'

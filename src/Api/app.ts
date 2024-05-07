@@ -23,4 +23,4 @@ app.get("/hello", (req, res) => {
   res.status(200).json({ success: true, msg: "server is running" })
 })
 
-app.use('/api', router)
+app.use("/api", router)
