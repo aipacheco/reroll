@@ -36,3 +36,26 @@ export const getAddressById = async (id: string) => {
   }
   return { data: address }
 }
+
+export const updateAddress = async (
+  id: string,
+  body: AddressData,
+  userId: number
+) => {
+  const { name, lastName, streetAddress, city, province, cp } = body
+  const address = await Address.findOne({ _id: id, owner: userId }).exec()
+  if (!address) {
+    return {
+      error: "Dirección no encontrada o no tienes permiso para actualizarla",
+    }
+  }
+  address.name = name
+  address.lastName = lastName
+  address.streetAddress = streetAddress
+  address.city = city
+  address.province = province
+  address.cp = cp
+
+  const updatedAddress = await address.save()
+  return { data: updatedAddress }
+}

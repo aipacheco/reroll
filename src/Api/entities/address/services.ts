@@ -17,9 +17,17 @@ export const getAddressByUser = async (userId: number) => {
 }
 
 export const getAddressById = async (id: string) => {
-    const { data, error } = await Repository.getAddressById(id)
-    if (error) {
-        return { error }
-    }
-    return { data }
-    }
+  const { data, error } = await Repository.getAddressById(id)
+  if (error) {
+    return { error }
+  }
+  return { data }
+}
+export const updateAddress = async (id: string, body: AddressData, userId:number) => {
+  console.log(id)
+  const { data, error } = await Repository.updateAddress(id, body, userId)
+  if (error) {
+    return { error }
+  }
+  return { data }
+}
