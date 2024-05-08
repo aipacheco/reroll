@@ -76,35 +76,42 @@ export const getAllGames = async () => {
   return { data }
 }
 
-export const updateGame = async ( id: string, body: GameData, files: Files, userId:number) => {
+export const updateGame = async (
+  id: string,
+  body: GameData,
+  files: Files,
+  userId: number
+) => {
   const { name, description, playersMin, playersMax, price, category } = body
-  const { image1, image2, image3 } = files
+  let { image1, image2, image3 } = files
+    ? files
+    : { image1: null, image2: null, image3: null }
 
-  const uploadImage = async (image: Image[]) => {
-    let resultUrl = ""
-    await new Promise((resolve, reject) => {
-      cloudinary.uploader
-        .upload_stream(
-          { resource_type: "auto", folder: "reroll" },
-          (error, result) => {
-            if (error) reject(error)
-            else if (result && result.url) {
-              resultUrl = result.url
-              resolve(resultUrl)
+    const uploadImage = async (image: Image[] | null) => {
+      if (!image) return null
+      let resultUrl = ""
+      await new Promise((resolve, reject) => {
+        cloudinary.uploader
+          .upload_stream(
+            { resource_type: "auto", folder: "reroll" },
+            (error, result) => {
+              if (error) reject(error)
+              else if (result && result.url) {
+                resultUrl = result.url
+                resolve(resultUrl)
+              }
             }
-          }
-        )
-        .end(image[0].buffer)
-    })
-    return resultUrl
-  }
+          )
+          .end(image[0].buffer)
+      })
+      return resultUrl
+    }
 
   const [image1Url, image2Url, image3Url] = await Promise.all([
     uploadImage(image1),
     uploadImage(image2),
     uploadImage(image3),
   ])
-
 
   const { data, error } = await Repository.updateGame(
     id,

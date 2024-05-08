@@ -58,9 +58,9 @@ export const updateGame = async (
   playersMax: number,
   price: number,
   category: ObjectId,
-  image1Url: string,
-  image2Url: string,
-  image3Url: string
+  image1Url: string | null,
+  image2Url: string | null,
+  image3Url: string | null
 ) => {
   const game = await Game.findById(id)
   if (!game) {
@@ -76,9 +76,9 @@ export const updateGame = async (
       playersMax: playersMax,
       price: price,
       category: category,
-      image1: image1Url,
-      image2: image2Url,
-      image3: image3Url,
+      image1: image1Url !== null ? image1Url : game.image1,
+      image2: image2Url !== null ? image2Url : game.image2,
+      image3: image3Url !== null ? image3Url : game.image3,
     },
     { new: true }
   )
