@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "66239e8a8f7285fb94e0e38f"
+  },
+  "name": "eurogame",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "name": "cartas",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662f4dea04d1d343c79923dd"
+  },
+  "name": "Cooperativo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "name": "Party",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6639f45d982f079ee307a141"
+  },
+  "name": "Wargame",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6639f649982f079ee307a17b"
+  },
+  "name": "Familiar",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6639f83e982f079ee307a19b"
+  },
+  "name": "Narrativo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663c9b2157fd7d6f76be0da9"
+  },
+  "name": "Infantil",
+  "__v": 0
+}]
