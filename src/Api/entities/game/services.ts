@@ -1,6 +1,7 @@
 import { Files, GameData, Image } from "../../types"
 import { v2 as cloudinary } from "cloudinary"
 import * as Repository from "./repository"
+import { validator } from "./utils"
 
 export const createGame = async (
   body: GameData,
@@ -39,22 +40,27 @@ export const createGame = async (
   ])
 
   try {
-    const { data, error } = await Repository.createGame(
-      userId,
-      name,
-      description,
-      playersMin,
-      playersMax,
-      price,
-      category,
-      image1Url,
-      image2Url,
-      image3Url
-    )
-    if (error) {
-      return { error }
+    const invalidGame = validator(body, "game")
+    if (invalidGame) {
+      return { error: invalidGame }
+    } else {
+      const { data, error } = await Repository.createGame(
+        userId,
+        name,
+        description,
+        playersMin,
+        playersMax,
+        price,
+        category,
+        image1Url,
+        image2Url,
+        image3Url
+      )
+      if (error) {
+        return { error }
+      }
+      return { data }
     }
-    return { data }
   } catch (error) {
     console.log(error)
     return { error: error }
@@ -87,25 +93,25 @@ export const updateGame = async (
     ? files
     : { image1: null, image2: null, image3: null }
 
-    const uploadImage = async (image: Image[] | null) => {
-      if (!image) return null
-      let resultUrl = ""
-      await new Promise((resolve, reject) => {
-        cloudinary.uploader
-          .upload_stream(
-            { resource_type: "auto", folder: "reroll" },
-            (error, result) => {
-              if (error) reject(error)
-              else if (result && result.url) {
-                resultUrl = result.url
-                resolve(resultUrl)
-              }
+  const uploadImage = async (image: Image[] | null) => {
+    if (!image) return null
+    let resultUrl = ""
+    await new Promise((resolve, reject) => {
+      cloudinary.uploader
+        .upload_stream(
+          { resource_type: "auto", folder: "reroll" },
+          (error, result) => {
+            if (error) reject(error)
+            else if (result && result.url) {
+              resultUrl = result.url
+              resolve(resultUrl)
             }
-          )
-          .end(image[0].buffer)
-      })
-      return resultUrl
-    }
+          }
+        )
+        .end(image[0].buffer)
+    })
+    return resultUrl
+  }
 
   const [image1Url, image2Url, image3Url] = await Promise.all([
     uploadImage(image1),
@@ -113,21 +119,26 @@ export const updateGame = async (
     uploadImage(image3),
   ])
 
-  const { data, error } = await Repository.updateGame(
-    id,
-    userId,
-    name,
-    description,
-    playersMin,
-    playersMax,
-    price,
-    category,
-    image1Url,
-    image2Url,
-    image3Url
-  )
-  if (error) {
-    return { error }
+  const invalidGame = validator(body, "game")
+  if (invalidGame) {
+    return { error: invalidGame }
+  } else {
+    const { data, error } = await Repository.updateGame(
+      id,
+      userId,
+      name,
+      description,
+      playersMin,
+      playersMax,
+      price,
+      category,
+      image1Url,
+      image2Url,
+      image3Url
+    )
+    if (error) {
+      return { error }
+    }
+    return { data }
   }
-  return { data }
 }
