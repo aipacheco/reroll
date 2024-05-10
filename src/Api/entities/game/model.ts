@@ -25,6 +25,11 @@ const GameSchema = new Schema(
     image3: { type: String },
     price: { type: Number, required: true },
     category: { type: Types.ObjectId, ref: "Category" },
+    status: {
+      type: String,
+      enum: ["disponible", "reservado", "comprado"],
+      default: "disponible",
+    },
   },
   {
     timestamps: true,

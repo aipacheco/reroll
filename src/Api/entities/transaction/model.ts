@@ -8,7 +8,7 @@ const TransactionSchema = new Schema(
     price: { type: Number },
     status: {
       type: String,
-      enum: ["pendiente", "enviado", "completado", "cancelado", "reservado"],
+      enum: ["pendiente", "enviado", "completado", "cancelado"],
       default: "pendiente",
     },
   },

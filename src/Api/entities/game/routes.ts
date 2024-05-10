@@ -42,5 +42,6 @@ gameRouter.put(
   Controller.updateGame
 )
 gameRouter.delete("/:id", auth, isAdmin, Controller.deleteGame)
+gameRouter.put("/reserve/:id", auth, Controller.reserveGame)
 
 export default gameRouter

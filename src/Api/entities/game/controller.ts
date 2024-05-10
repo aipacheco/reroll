@@ -141,3 +141,31 @@ export const deleteGame = async (request: Request, response: Response) => {
     })
   }
 }
+
+export const reserveGame = async (request: Request, response: Response) => {
+  const { userId } = request.tokenData
+  const { id } = request.params
+  try {
+    const { data, error } = await Service.reserveGame(id, userId)
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Juego reservado correctamente",
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "No se ha podido reservar el juego",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}

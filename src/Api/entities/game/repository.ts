@@ -2,6 +2,7 @@ import User from "../user/model"
 import Game from "./model"
 import { ObjectId } from "mongoose"
 
+
 export const createGame = async (
   userId: number,
   name: string,
@@ -108,4 +109,26 @@ export const deleteGame = async (id: string) => {
     return { error: "No se ha podido borrar este juego" }
   }
   return { data: deletedGame, email: sellerEmail }
+}
+
+export const reserveGame = async (id: string, userId: number) => {
+  const game = await Game.findById(id)
+  if (!game) {
+    return { error: "Juego no encontrado" }
+  }
+  if (game.status !== "disponible") {
+    return { error: "Juego no disponible" }
+  }
+  if (game.author.toString() !== userId.toString()) {
+    return { error: "No puedes reservar el juego de otra persona" };
+  }
+  const reservedGame = await Game.findOneAndUpdate(
+    { _id: id },
+    { status: "reservado" },
+    { new: true }
+  )
+  if (!reservedGame) {
+    return { error: "No se ha podido reservar el juego" }
+  }
+  return { data: reservedGame }
 }
