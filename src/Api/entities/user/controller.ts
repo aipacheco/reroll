@@ -83,3 +83,30 @@ export const getAllUsers = async (request: Request, response: Response) => {
     })
   }
 }
+
+export const deleteUser = async (request: Request, response: Response) => {
+  const { id } = request.params
+  try {
+    const { data, error } = await Services.deleteUser(id)
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Usuario eliminado correctamente",
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "No se ha podido eliminar el usuario",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}

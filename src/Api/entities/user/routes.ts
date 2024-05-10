@@ -20,5 +20,6 @@ userRouter.put(
   Controller.updateProfile
 )
 userRouter.get("/", auth, isAdmin, Controller.getAllUsers)
+userRouter.delete("/:id", auth, isAdmin, Controller.deleteUser)
 
 export default userRouter

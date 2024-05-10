@@ -62,3 +62,11 @@ export const getAllUsers = async () => {
   }
   return { data }
 }
+
+export const deleteUser = async (id: string) => {
+  const { data, error } = await Repository.deleteUser(id)
+  if (error) {
+    return { error }
+  }
+  return { data }
+}
