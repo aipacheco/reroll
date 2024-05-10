@@ -113,3 +113,31 @@ export const updateGame = async (request: Request, response: Response) => {
     })
   }
 }
+
+export const deleteGame = async (request: Request, response: Response) => {
+  const { id } = request.params
+  const { reason} = request.body
+  try {
+    const { data, error } = await Service.deleteGame(id, reason)
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Anuncio eliminado correctamente",
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "No tienes permisos para eliminar este anuncio",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}

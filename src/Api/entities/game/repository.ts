@@ -92,3 +92,20 @@ export const updateGame = async (
 
   return { data: updatedGame }
 }
+
+export const deleteGame = async (id: string) => {
+  const game = await Game.findById(id)
+  if (!game) {
+    return { error: "Juego no encontrado" }
+  }
+  const seller = await User.findById(game.author)
+  if (!seller) {
+    return { error: "Vendedor no encontrado" }
+  }
+  const sellerEmail = seller.email
+  const deletedGame = await Game.findByIdAndDelete(id)
+  if (!deletedGame) {
+    return { error: "No se ha podido borrar este juego" }
+  }
+  return { data: deletedGame, email: sellerEmail }
+}

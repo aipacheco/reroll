@@ -82,7 +82,46 @@ export const sendEmailOnCreate = async (
         },
       ],
     })
-    console.log(request.body)
+    // console.log(request.body)
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message)
+      return { error: error.message }
+    }
+  }
+}
+
+export const sendEmailOnDelete = async (
+  sellerEmail: string,
+  reason: string,
+  game: GameData
+) => {
+  const { name, description, price } = game
+  try {
+    const request = await mailjet.post("send", { version: "v3.1" }).request({
+      Messages: [
+        {
+          From: {
+            Email: "rerollgamesales@gmail.com",
+          },
+          To: [
+            {
+              Email: sellerEmail,
+            },
+          ],
+          Subject: `Tu anuncio ha sido borrado de nuestra base de datos`,
+          TextPart: `Tu anuncio del juego ${name} ha sido borrado por la siguiente razón: 
+          ${reason}. 
+          Estos son los detalles de tu anuncio:
+            -Nombre del juego: ${name}
+            -Precio: ${price}
+            -Descripción: ${description}
+          Puedes volver a subir tu anuncio si lo deseas, o ponerte en contacto con nosotros.
+          ¡Gracias por confiar en Reroll!`,
+        },
+      ],
+    })
+    // console.log(request.body)
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message)

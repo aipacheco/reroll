@@ -1,7 +1,7 @@
 import { Files, GameData, Image } from "../../types"
 import { v2 as cloudinary } from "cloudinary"
 import * as Repository from "./repository"
-import { sendEmailOnCreate, validator } from "./utils"
+import { sendEmailOnCreate, sendEmailOnDelete, validator } from "./utils"
 
 export const createGame = async (
   body: GameData,
@@ -150,4 +150,19 @@ export const updateGame = async (
 
     return { data }
   }
+}
+
+export const deleteGame = async (id: string, reason:string) => {
+  const { data, error, email } = await Repository.deleteGame(id)
+  if (error) {
+    return { error }
+  }
+  if (data) {
+    const emailResult = await sendEmailOnDelete(email as string, reason, data as unknown as GameData)
+    if (emailResult?.error) {
+      console.log("Error al enviar el correo electrónico:", emailResult.error)
+      return { error: emailResult.error }
+    }
+  }
+  return { data }
 }
