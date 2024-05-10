@@ -1,3 +1,11 @@
+import { GameData } from "../../../../.history/src/Api/types/index.d_20240502095532"
+import { AddressData } from "../../types"
+
+const mailjet = require("node-mailjet").apiConnect(
+  process.env.MAIL_API_KEY,
+  process.env.MAIL_API_SECRET
+)
+
 export const validator = (value: any, type: string) => {
   const regexName = /^[a-zA-Z0-9 áéíóúÁÉÍÓÚ]+$/
 
@@ -42,5 +50,43 @@ export const validator = (value: any, type: string) => {
 
     default:
       console.log("pues ok")
+  }
+}
+export const sendEmailOnCreate = async (
+  sellerEmail: string,
+  game: GameData
+) => {
+  const { name, description, playersMin, playersMax, price } = game
+
+  try {
+    const request = await mailjet.post("send", { version: "v3.1" }).request({
+      Messages: [
+        {
+          From: {
+            Email: "rerollgamesales@gmail.com",
+          },
+          To: [
+            {
+              Email: sellerEmail,
+            },
+          ],
+          Subject: `Has subido un anuncio en Reroll!`,
+          TextPart: `Tu anuncio del juego ${name} ha sido subido correctamente. 
+          Estos son los detalles de tu anuncio:
+            -Nombre del juego: ${name}
+            -Precio: ${price}
+            -Descripción: ${description}
+            -Número mínimo de jugadores: ${playersMin}
+            -Número máximo de jugadores: ${playersMax}
+          ¡Buena suerte con la venta!`,
+        },
+      ],
+    })
+    console.log(request.body)
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message)
+      return { error: error.message }
+    }
   }
 }

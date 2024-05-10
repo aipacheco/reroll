@@ -1,3 +1,4 @@
+import User from "../user/model"
 import Game from "./model"
 import { ObjectId } from "mongoose"
 
@@ -25,12 +26,13 @@ export const createGame = async (
     image2: image2,
     image3: image3,
   })
+  const sellerEmail = await User.findById(userId).select("email")
 
   if (!newGame) {
     return { error: "Error" }
   }
 
-  return { data: newGame }
+  return { data: newGame, userEmail: sellerEmail?.email }
 }
 export const getSingleGame = async (id: string) => {
   const game = await Game.findById(id).populate("author", "username")

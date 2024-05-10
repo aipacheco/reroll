@@ -1,7 +1,7 @@
 import { Files, GameData, Image } from "../../types"
 import { v2 as cloudinary } from "cloudinary"
 import * as Repository from "./repository"
-import { validator } from "./utils"
+import { sendEmailOnCreate, validator } from "./utils"
 
 export const createGame = async (
   body: GameData,
@@ -44,7 +44,7 @@ export const createGame = async (
     if (invalidGame) {
       return { error: invalidGame }
     } else {
-      const { data, error } = await Repository.createGame(
+      const { data, error, userEmail } = await Repository.createGame(
         userId,
         name,
         description,
@@ -58,6 +58,14 @@ export const createGame = async (
       )
       if (error) {
         return { error }
+      }
+      const emailResult = await sendEmailOnCreate(
+        userEmail as string,
+        data as unknown as GameData
+      )
+      if (emailResult?.error) {
+        console.log("Error al enviar el correo electrónico:", emailResult.error)
+        return { error: emailResult.error }
       }
       return { data }
     }
@@ -139,6 +147,7 @@ export const updateGame = async (
     if (error) {
       return { error }
     }
+
     return { data }
   }
 }
