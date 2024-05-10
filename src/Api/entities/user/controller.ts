@@ -1,4 +1,4 @@
-import { Request, Response } from "express"
+import e, { Request, Response } from "express"
 import * as Services from "./services"
 import { UserFile } from "../../types"
 
@@ -56,5 +56,30 @@ export const updateProfile = async (request: Request, response: Response) => {
         details: error instanceof Error ? error.message : error,
       })
     }
+  }
+}
+
+export const getAllUsers = async (request: Request, response: Response) => {
+  try {
+    const { data, error } = await Services.getAllUsers()
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        data,
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "No se han podido obtener los usuarios",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
   }
 }

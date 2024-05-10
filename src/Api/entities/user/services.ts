@@ -1,3 +1,4 @@
+import e from "express"
 import { UserFile, Image, UserUpdate } from "../../types"
 import * as Repository from "./repository"
 import { v2 as cloudinary } from "cloudinary"
@@ -48,6 +49,14 @@ export const updateProfile = async (
     description,
     avatarUrl as string
   )
+  if (error) {
+    return { error }
+  }
+  return { data }
+}
+
+export const getAllUsers = async () => {
+  const { data, error } = await Repository.getAllUsers()
   if (error) {
     return { error }
   }

@@ -38,3 +38,11 @@ export const updateProfile = async (
   // console.log("en repository",updatedProfile)
   return { data: updatedProfile }
 }
+
+export const getAllUsers = async () => {
+  const allUsers = await User.find().select("-password")
+  if (!allUsers) {
+    return { error: "No hay usuarios" }
+  }
+  return { data: allUsers }
+}

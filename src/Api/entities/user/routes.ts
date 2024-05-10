@@ -19,5 +19,6 @@ userRouter.put(
   auth,
   Controller.updateProfile
 )
+userRouter.get("/", auth, isAdmin, Controller.getAllUsers)
 
 export default userRouter
