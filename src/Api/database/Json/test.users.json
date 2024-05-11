@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "6634c63a83332a0515086b06"
+  },
+  "username": "elMontaraz",
+  "email": "alex@gmail.com",
+  "password": "$2b$12$Q8dn7vRDLNDoWB7DVT6sF.CfJLwk.VmMOnb5YoR5IwhcQw294JYDe",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re:roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-03T11:10:50.937Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-03T11:10:50.937Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "username": "murmaider",
+  "email": "kornetera@gmail.com",
+  "password": "$2b$12$2SqX3ReiIIvbNH4wk8c4qewgwlO67xh5DSd/Rct4TxEa9Z1eJRrSO",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715159150/reroll/yqwaydpkgsohmdwy61ar.jpg",
+  "description": "Te vendo mis juegos que ya no uso. Estoy en Valencia",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T08:48:16.164Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T08:48:16.164Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ed90982f079ee307a0f8"
+  },
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2b$12$WLPTrFlWFgKMaSspsXx4Y.eOBP9tqB2ss6jm2V3VcHXiBzOsS8T4y",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re:roll!",
+  "role": "admin",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T09:00:00.530Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:00:00.530Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f54a982f079ee307a161"
+  },
+  "username": "ozzy",
+  "email": "ozzy@gmail.com",
+  "password": "$2b$12$mZmVG6Ah8OEtllpvcM5yGO2z0YFIML2HO1p8d.AK8/rwTWTZ9smEq",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247536/reroll/ygo2kwfqvbsge9oj33fz.jpg",
+  "description": "¡Hola! Soy nuevo en re:roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T09:32:58.999Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:32:58.999Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f757982f079ee307a18f"
+  },
+  "username": "tortaorca",
+  "email": "angela@gmail.com",
+  "password": "$2b$12$sJCG9/LZVAUbY4l3ulM3xea8/kdx5iR7qd4MDRJi.Xes7D3VrBmue",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074960/reroll/j4w0wkqj4zw3wd0zs7zw.jpg",
+  "description": "Desde el corazón del averno",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T09:41:43.216Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:41:43.216Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fb87982f079ee307a1bf"
+  },
+  "username": "parthas",
+  "email": "pedro@gmail.com",
+  "password": "$2b$12$3tJmzi4UNuvunaVk7CDsyuusJc.3V/u.3POu.y08CjboptLbxwVfK",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076351/reroll/o6i1svulsz7tfgrvmay6.png",
+  "description": "El caballero anteriormente maldito",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T09:59:35.142Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:59:35.142Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fe4d982f079ee307a1ec"
+  },
+  "username": "lyssandra",
+  "email": "lyssandra@gmail.com",
+  "password": "$2b$12$zROMgjjFcENVbdfZDxbvHuiFMUaODmojGXL6nM8NUYEkPLYd4gA3O",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076908/reroll/tay0vsdr8tw3aww8thqt.jpg",
+  "description": "Aventuras las justas, que me ensucio",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T10:11:25.433Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:11:25.433Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663a042d982f079ee307a267"
+  },
+  "username": "aikonomura",
+  "email": "chinoloco@gmail.com",
+  "password": "$2b$12$JuQ3BRgC3C2SCOH29iWJvus8iWNwN6IYBtKNmcsK1giBjcK0tMmVq",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715078316/reroll/lf7uu1dtqf3q5buogue7.avif",
+  "description": "El Original chino volador, no acepte imitaciones",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-07T10:36:29.534Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:36:29.534Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c99ec57fd7d6f76be0d93"
+  },
+  "username": "nico",
+  "email": "nico@gmail.com",
+  "password": "$2b$12$2pqlfppaScEvhusQ6J6iS.9vPBf79MTytffR3E5qe/qeLlztBuU56",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715248277/reroll/df70bzsqkjk5p7yea3dc.jpg",
+  "description": "Un médico un poco raro de cyberpunk",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-09T09:39:56.620Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:39:56.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d73acf122ed20b1325a86"
+  },
+  "username": "reroll",
+  "email": "rerollgamesales@gmail.com",
+  "password": "$2b$12$pBcJXFpaLSnKt5nU/u4tQemkYpggOMmktsJvq9yn8zzdS8pYpobSO",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re:roll!",
+  "role": "admin",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-10T01:09:00.632Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T01:09:00.632Z"
+  }
+}]

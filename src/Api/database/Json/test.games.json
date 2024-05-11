@@ -1,0 +1,676 @@
+[{
+  "_id": {
+    "$oid": "6639eb9f982f079ee307a0da"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Hogwarts Battle",
+  "description": "Un juego de mesa de Harry Potter, de construcción de mazos",
+  "playersMin": 2,
+  "playersMax": 4,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715071901/reroll/d58lossdumz2bcmnszja.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715071901/reroll/fq1b45orqk0hunfbfyng.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715071901/reroll/nn92gks8woruwcv8o0wj.jpg",
+  "price": 25,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T08:51:43.512Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T08:51:43.512Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ec3a982f079ee307a0e6"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Pesadilla antes de navidad",
+  "description": "Juego de cartas de Pesadilla antes de navidad. Ahora mismo está descatalogado, por eso el precio",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072055/reroll/zcghasfwqqmqsgbkt4hq.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072055/reroll/lbfa0uxpav8udzipnqr7.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072055/reroll/ke71fp1idturzk61ghte.jpg",
+  "price": 30,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Reservado",
+  "createdAt": {
+    "$date": "2024-05-07T08:54:18.243Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T08:54:18.243Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ecae982f079ee307a0ee"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Catan plus",
+  "description": "Es la edición de 2023, lo vendo porque no me gustan este tipo de juegos pero está casi sin usar",
+  "playersMin": 3,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072172/reroll/fpxq8jetbxlma5lbgdyc.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072172/reroll/i8cw8ex3gx0rgwsm7w8g.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072172/reroll/pok5rn7dwpdczbq2rrmo.jpg",
+  "price": 50,
+  "category": {
+    "$oid": "66239e8a8f7285fb94e0e38f"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T08:56:14.328Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T08:56:14.328Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ee4f982f079ee307a100"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Dobble",
+  "description": "Juego de cartas para muchos jugadores. Es muy divertido",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072589/reroll/a7alghweux5vr4rrbmt2.png",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072589/reroll/b7bf8nlo0mjgy7lxncd0.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715072588/reroll/uw6rmjjmhecsnouuagoe.jpg",
+  "price": 6,
+  "category": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:03:11.203Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:03:11.203Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f490982f079ee307a145"
+  },
+  "author": {
+    "$oid": "6634c63a83332a0515086b06"
+  },
+  "name": "Shatterpoint clone force 99",
+  "description": "Expansión de unidades de shatterpoint",
+  "playersMin": 2,
+  "playersMax": 2,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074191/reroll/tqwgmw0wm7bpl75qfssg.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074190/reroll/ksnyxha7ubvnu2vybrjr.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074190/reroll/axbjsxwcvj9bvhrs0ggm.jpg",
+  "price": 30,
+  "category": {
+    "$oid": "6639f45d982f079ee307a141"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:29:52.723Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:29:52.723Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f4f5982f079ee307a153"
+  },
+  "author": {
+    "$oid": "6634c63a83332a0515086b06"
+  },
+  "name": "Shatterpoint expansión Moff Guideon",
+  "description": "Expansión de unidades de shatterpoint, que trae incluído al Moff Guideon",
+  "playersMin": 2,
+  "playersMax": 2,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074291/reroll/p7ixfcx7qogjdwhdp3h1.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074291/reroll/ecbsbtjzqfrwzwv6y0ou.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074291/reroll/asyrcoxdcmpheb704obs.jpg",
+  "price": 25,
+  "category": {
+    "$oid": "6639f45d982f079ee307a141"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:31:33.814Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:31:33.814Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f600982f079ee307a16a"
+  },
+  "author": {
+    "$oid": "6639f54a982f079ee307a161"
+  },
+  "name": "Monstervania",
+  "description": "Es un juego de tipo metroidvania pero de mesa. Lo probé y no me gustó pero es muy bonito",
+  "playersMin": 1,
+  "playersMax": 2,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074558/reroll/r7f0bj1odnyc2qbhhqrk.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074558/reroll/qders5se4fwukkolgfx0.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074558/reroll/brubfpy1er3hvdizc3un.jpg",
+  "price": 25,
+  "category": {
+    "$oid": "662f4dea04d1d343c79923dd"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:36:00.476Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:36:00.476Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f68f982f079ee307a17f"
+  },
+  "author": {
+    "$oid": "6639f54a982f079ee307a161"
+  },
+  "name": "Take it easy",
+  "description": "Es un buen juego pero ya me he cansado de él",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715174055/reroll/huh6lwes9yptfgh7o0w9.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715174055/reroll/zxv4z1mzexjli0n1xk3q.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715174055/reroll/hujolbkhuekuos1clgzf.jpg",
+  "price": 15,
+  "category": {
+    "$oid": "6639f649982f079ee307a17b"
+  },
+  "status": "Vendido",
+  "createdAt": {
+    "$date": "2024-05-07T09:38:23.416Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:38:23.416Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f707982f079ee307a187"
+  },
+  "author": {
+    "$oid": "6639f54a982f079ee307a161"
+  },
+  "name": "Exploding kittens party pack",
+  "description": "El juego es como el Exploding kittens original pero para mucha gente. Es muy divertido para fiestas",
+  "playersMin": 2,
+  "playersMax": 10,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074821/reroll/x2ky1mkiaeqeo85ri1hb.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074821/reroll/c4sbsaa1rrtetev46hjl.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715074821/reroll/q1g0fnfmg3qikrzh8nn7.jpg",
+  "price": 14,
+  "category": {
+    "$oid": "66239e8a8f7285fb94e0e38f"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:40:23.281Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:40:23.281Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f877982f079ee307a19f"
+  },
+  "author": {
+    "$oid": "6639f757982f079ee307a18f"
+  },
+  "name": "Aventura Z Lovecraft",
+  "description": "A Gaar no le gustan los juegos tan largos, por eso lo vende",
+  "playersMin": 1,
+  "playersMax": 2,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075189/reroll/ya8jkkdcek8rrpwg3cgd.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075189/reroll/valw1ftnytkbcmnxq0dn.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075189/reroll/b88bguvwdxuepw0oe3cb.jpg",
+  "price": 15,
+  "category": {
+    "$oid": "6639f83e982f079ee307a19b"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:46:31.632Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:46:31.632Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639f941982f079ee307a1a7"
+  },
+  "author": {
+    "$oid": "6639f757982f079ee307a18f"
+  },
+  "name": "Take it easy",
+  "description": "Gaar antes jugaba con su padre, pero él la traicionó. Ahora Gaar vende este juego",
+  "playersMin": 1,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075391/reroll/jgpgbem7yoetzj7jg83z.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075391/reroll/frmkh8cq0nxctpkawoiv.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075391/reroll/hz2gvgwq2v8quee1i2ti.jpg",
+  "price": 20,
+  "category": {
+    "$oid": "6639f649982f079ee307a17b"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:49:53.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:49:53.202Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fac9982f079ee307a1b7"
+  },
+  "author": {
+    "$oid": "6639f757982f079ee307a18f"
+  },
+  "name": "Exploding kittens",
+  "description": "Los gatos le gustan a Gaar, pero no cuando explotan",
+  "playersMin": 2,
+  "playersMax": 5,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075783/reroll/ilde8iopwzs6kkemap9q.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075783/reroll/tdg4jpen3ex9fpjcgpq0.png",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715075783/reroll/z852758m7vsah8vyl7kj.jpg",
+  "price": 10,
+  "category": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T09:56:25.165Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T09:56:25.165Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fc6b982f079ee307a1c8"
+  },
+  "author": {
+    "$oid": "6639fb87982f079ee307a1bf"
+  },
+  "name": "Virus",
+  "description": "Al tener que gobernar mi reino ahora ya no tengo tiempo para jugar, por eso lo vendo",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076201/reroll/hei0xjsvduso7osnae11.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076201/reroll/hpq1jmgwig8ygiuxeir4.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076201/reroll/popt9s7onm1lam7kuhqd.jpg",
+  "price": 8,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:03:23.154Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:03:23.154Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fd71982f079ee307a1d4"
+  },
+  "author": {
+    "$oid": "6639fb87982f079ee307a1bf"
+  },
+  "name": "Polilla tramposa",
+  "description": "Me recuerda demasiado a mi hermano, no quiero verlo más en mi castillo",
+  "playersMin": 3,
+  "playersMax": 5,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076462/reroll/lqbjl4hj0ohksruepqd9.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076463/reroll/rb3rlxmcftef9sahcckn.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076463/reroll/qal34fo08ii2cvqnbogq.jpg",
+  "price": 5,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:07:45.585Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:07:45.585Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639fe0b982f079ee307a1dc"
+  },
+  "author": {
+    "$oid": "6639fb87982f079ee307a1bf"
+  },
+  "name": "Little secret",
+  "description": "Un juego de tipo \"mentiroso\" que no me acaba de gustar porque no pillo bien las ironías",
+  "playersMin": 4,
+  "playersMax": 10,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076617/reroll/hwlajmq8uxx2zp4q54go.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076617/reroll/vaqvbayu9osllgwuryav.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715076617/reroll/rimeszgoekvxmzbmzszp.jpg",
+  "price": 8,
+  "category": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:10:19.590Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:10:19.590Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6639ff93982f079ee307a1f7"
+  },
+  "author": {
+    "$oid": "6639fe4d982f079ee307a1ec"
+  },
+  "name": "Dixit",
+  "description": "Lo tenía por la tienda y no me ha gustado demasiado",
+  "playersMin": 3,
+  "playersMax": 8,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077009/reroll/udg5d8fti4q3bbci8lp4.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077010/reroll/sx6fr5wc1opxgfphq41t.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077010/reroll/antrcwxmg93ba499oac2.jpg",
+  "price": 20,
+  "category": {
+    "$oid": "66239e8a8f7285fb94e0e38f"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:16:51.832Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:16:51.832Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663a016c982f079ee307a22d"
+  },
+  "author": {
+    "$oid": "6639fe4d982f079ee307a1ec"
+  },
+  "name": "Hombres lobo de castronegro",
+  "description": "Es un juego genial para jugar muchos jugadores, en la academia no me dejan jugar",
+  "playersMin": 8,
+  "playersMax": 18,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077482/reroll/umhvyi4dyfhzlr4gxu3b.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077482/reroll/a1rdlwpxaal7izolpbl7.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077482/reroll/t8zddewuizr5pmqax6oi.jpg",
+  "price": 8,
+  "category": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:24:44.578Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:24:44.578Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663a02fe982f079ee307a257"
+  },
+  "author": {
+    "$oid": "6639fe4d982f079ee307a1ec"
+  },
+  "name": "Hogwarts Battle Defensa contra las artes oscuras",
+  "description": "Antes jugaba con el chino loco a este juego y lo vendo para ir al barco a verlo",
+  "playersMin": 2,
+  "playersMax": 2,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077884/reroll/veebwtbc1wyi86hleez6.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077885/reroll/xizm2ot1kmhgpnmlqalr.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715077884/reroll/pkestppvv5jmhtt2ztrc.jpg",
+  "price": 20,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-07T10:31:26.835Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-07T10:31:26.835Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c9ac457fd7d6f76be0d9c"
+  },
+  "author": {
+    "$oid": "663c99ec57fd7d6f76be0d93"
+  },
+  "name": "jumanji",
+  "description": "Como el de la película! Se trata de una réplica jugable, con todos los efectos del mismo pero sin estampida de rinocerontes!",
+  "playersMin": 2,
+  "playersMax": 4,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247811/reroll/w74ed5rgrjtz7d6kljt2.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247811/reroll/u4mqiepwx9yekrwvy9gz.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247811/reroll/m3kv72nuf4y53xxwpda9.jpg",
+  "price": 15,
+  "category": {
+    "$oid": "6639f649982f079ee307a17b"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T09:43:32.322Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:43:32.322Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c9b5a57fd7d6f76be0dad"
+  },
+  "author": {
+    "$oid": "663c99ec57fd7d6f76be0d93"
+  },
+  "name": "Rush Hour Escapa del Atasco",
+  "description": "Es un juego de puzzles para niños, muy divertido y de lógica",
+  "playersMin": 1,
+  "playersMax": 1,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247962/reroll/pefxw1ltop69osbzsegq.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247961/reroll/j9mfjb8cuxgq27ipmywu.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247962/reroll/ynkl8hkcwwlgz9wti0ta.jpg",
+  "price": 8,
+  "category": {
+    "$oid": "663c9b2157fd7d6f76be0da9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T09:46:02.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:46:02.738Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663c9c1d57fd7d6f76be0db9"
+  },
+  "author": {
+    "$oid": "663c99ec57fd7d6f76be0d93"
+  },
+  "name": "Taco Gato Cabra Queso Pizza",
+  "description": "Es un juego rápido y entretenido para llevar de viaje con niños",
+  "playersMin": 3,
+  "playersMax": 8,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715248157/reroll/ergjc2mfewrduyv28j5g.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715248156/reroll/oxlwg4wtvakzcvcjgyyq.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715248157/reroll/qj94chpneqzbyi26sdej.jpg",
+  "price": 7,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T09:49:17.547Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T09:49:17.547Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d31e03375273fc23eafbd"
+  },
+  "author": {
+    "$oid": "663c99ec57fd7d6f76be0d93"
+  },
+  "name": "Scrabble Harry Potter",
+  "description": "Es como el scrabble original pero de hacer palabras del mundo potter. Lo vendo porque me lo regalaron y no me gusta potter",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715286495/reroll/lgo7j05yjw9mwvtszuog.avif",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715286495/reroll/pdualpwn75fww0lowv7o.avif",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715286495/reroll/a6dagptxclyzr0th8s3p.avif",
+  "price": 22,
+  "category": {
+    "$oid": "6639f649982f079ee307a17b"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T20:28:16.651Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T20:28:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d42123375273fc23eb100"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Trivial de Harry Potter",
+  "description": "El Trivial de siempre pero con preguntas específicas del mundo mágico!",
+  "playersMin": 2,
+  "playersMax": 4,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290640/reroll/slxuhjon2fuaroasei57.avif",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290639/reroll/umbw4ochaxx5vgkecurm.avif",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290640/reroll/ip70ehvcyaq5smbb7el0.avif",
+  "price": 17,
+  "category": {
+    "$oid": "6639ee0f982f079ee307a0fc"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T21:37:22.517Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T21:37:22.517Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d425b3375273fc23eb10a"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Uno",
+  "description": "Es el Uno de siempre pero con motivos de Buzz Lightyear",
+  "playersMin": 2,
+  "playersMax": 8,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290714/reroll/nvwdfklkf94qq4utrz7e.avif",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290714/reroll/giuo188rstecannjdxtw.avif",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715290714/reroll/rh8bdnxzzgdfump8ryi2.avif",
+  "price": 9,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T21:38:35.921Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T21:38:35.921Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d62f69bfea0954fe9bc90"
+  },
+  "author": {
+    "$oid": "6639f54a982f079ee307a161"
+  },
+  "name": "Lorcana",
+  "description": "El último juego de disney, de tipo Magic",
+  "playersMin": 2,
+  "playersMax": 4,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299061/reroll/aqcmbq1azi6bxhdyw3ef.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299061/reroll/m8xkiipjxrvfpjgjfgpt.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299061/reroll/vty1px08cocymm1ohbmh.jpg",
+  "price": 20,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-09T23:57:42.800Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-09T23:57:42.800Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663d646e30bfd81b2bb36bcf"
+  },
+  "author": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Lorcana",
+  "description": "Es un juego de tipo Magic pero con ilustraciones de disney. Lo vendo porque me lo regalaron y no me gusta",
+  "playersMin": 2,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299437/reroll/wrlsjdfql1cxog5xn4ao.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299437/reroll/mzu4r261n5bqdbobaaw9.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715299437/reroll/sqfu4jk93shukp2iyqfz.jpg",
+  "price": 20,
+  "category": {
+    "$oid": "6623c59c9197899613834cc9"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-10T00:03:58.509Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T00:03:58.509Z"
+  }
+}]

@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose"
+import { Schema, Types, model } from "mongoose"
 
 const UserSchema = new Schema(
   {
@@ -14,15 +14,24 @@ const UserSchema = new Schema(
     },
     password: {
       type: String,
-      required: true,
-      select: false // Esto hace que la contraseña no se devuelva por defecto
+      required: true, 
+    },
+    avatar: {
+      type: String,
+      default:"https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png"
+    },
+    description: {
+      type: String,
+      default: "¡Hola! Soy nuevo en re:roll!",
     },
     role: {
       type: String,
       enum: ["user", "admin"],
       default: "user",
     },
-
+    chats: [{ type: Types.ObjectId, ref: "Chat" }],
+    saved: [{ type: Types.ObjectId, ref: "Game" }],
+    address: [{ type: Types.ObjectId, ref: "Address" }],
   },
   {
     timestamps: true,
