@@ -122,7 +122,7 @@ export const reserveGame = async (id: string, userId: number) => {
           "No puedes cambiar el estado de reserva del juego de otra persona",
       }
     }
-    const newStatus = game.status === "disponible" ? "reservado" : "disponible"
+    const newStatus = game.status === "Disponible" || game.status ==="Vendido" ? "Reservado" : "Disponible"
     const updatedGame = await Game.findOneAndUpdate(
       { _id: id },
       { status: newStatus },
@@ -153,7 +153,7 @@ export const buyGame = async (id: string, userId: number) => {
           "No puedes cambiar el estado de venta del juego de otra persona",
       }
     }
-    const newStatus = game.status === "disponible" ? "vendido" : "disponible"
+    const newStatus = game.status === "Disponible" || game.status ==="Reservado" ? "Vendido" : "Disponible"
     const updatedGame = await Game.findOneAndUpdate(
       { _id: id },
       { status: newStatus },

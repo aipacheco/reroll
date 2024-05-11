@@ -16,6 +16,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T08:51:43.512Z"
   },
@@ -41,6 +42,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Reservado",
   "createdAt": {
     "$date": "2024-05-07T08:54:18.243Z"
   },
@@ -66,6 +68,7 @@
   "category": {
     "$oid": "66239e8a8f7285fb94e0e38f"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T08:56:14.328Z"
   },
@@ -91,6 +94,7 @@
   "category": {
     "$oid": "6639ee0f982f079ee307a0fc"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:03:11.203Z"
   },
@@ -116,6 +120,7 @@
   "category": {
     "$oid": "6639f45d982f079ee307a141"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:29:52.723Z"
   },
@@ -141,6 +146,7 @@
   "category": {
     "$oid": "6639f45d982f079ee307a141"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:31:33.814Z"
   },
@@ -166,6 +172,7 @@
   "category": {
     "$oid": "662f4dea04d1d343c79923dd"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:36:00.476Z"
   },
@@ -191,6 +198,7 @@
   "category": {
     "$oid": "6639f649982f079ee307a17b"
   },
+  "status": "Vendido",
   "createdAt": {
     "$date": "2024-05-07T09:38:23.416Z"
   },
@@ -216,6 +224,7 @@
   "category": {
     "$oid": "66239e8a8f7285fb94e0e38f"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:40:23.281Z"
   },
@@ -241,6 +250,7 @@
   "category": {
     "$oid": "6639f83e982f079ee307a19b"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:46:31.632Z"
   },
@@ -266,6 +276,7 @@
   "category": {
     "$oid": "6639f649982f079ee307a17b"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:49:53.202Z"
   },
@@ -291,6 +302,7 @@
   "category": {
     "$oid": "6639ee0f982f079ee307a0fc"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T09:56:25.165Z"
   },
@@ -316,6 +328,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:03:23.154Z"
   },
@@ -341,6 +354,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:07:45.585Z"
   },
@@ -366,6 +380,7 @@
   "category": {
     "$oid": "6639ee0f982f079ee307a0fc"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:10:19.590Z"
   },
@@ -391,6 +406,7 @@
   "category": {
     "$oid": "66239e8a8f7285fb94e0e38f"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:16:51.832Z"
   },
@@ -416,6 +432,7 @@
   "category": {
     "$oid": "6639ee0f982f079ee307a0fc"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:24:44.578Z"
   },
@@ -441,6 +458,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T10:31:26.835Z"
   },
@@ -466,6 +484,7 @@
   "category": {
     "$oid": "6639f649982f079ee307a17b"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T09:43:32.322Z"
   },
@@ -491,6 +510,7 @@
   "category": {
     "$oid": "663c9b2157fd7d6f76be0da9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T09:46:02.738Z"
   },
@@ -516,6 +536,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T09:49:17.547Z"
   },
@@ -541,6 +562,7 @@
   "category": {
     "$oid": "6639f649982f079ee307a17b"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T20:28:16.651Z"
   },
@@ -566,6 +588,7 @@
   "category": {
     "$oid": "6639ee0f982f079ee307a0fc"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T21:37:22.517Z"
   },
@@ -591,6 +614,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T21:38:35.921Z"
   },
@@ -616,6 +640,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-09T23:57:42.800Z"
   },
@@ -641,6 +666,7 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-10T00:03:58.509Z"
   },

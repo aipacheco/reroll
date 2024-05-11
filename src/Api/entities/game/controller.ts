@@ -148,14 +148,14 @@ export const reserveGame = async (request: Request, response: Response) => {
   const { id } = request.params
   try {
     const { data, error } = await Service.reserveGame(id, userId)
-    if (data?.status === "reservado") {
+    if (data?.status === "Reservado") {
       return response.status(200).json({
         success: true,
         data,
         message: "Juego marcado como reservado",
       })
     }
-    if (data?.status === "disponible") {
+    if (data?.status === "Disponible") {
       return response.status(200).json({
         success: true,
         data,
@@ -183,14 +183,14 @@ export const buyGame = async (request: Request, response: Response) => {
   const { id } = request.params
   try {
     const { data, error } = await Service.buyGame(id, userId)
-    if (data?.status === "vendido") {
+    if (data?.status === "Vendido") {
       return response.status(200).json({
         success: true,
         data,
         message: "Juego marcado como vendido",
       })
     }
-    if (data?.status === "disponible") {
+    if (data?.status === "Disponible") {
       return response.status(200).json({
         success: true,
         data,

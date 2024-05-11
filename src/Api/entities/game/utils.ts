@@ -1,5 +1,4 @@
-import { GameData } from "../../../../.history/src/Api/types/index.d_20240502095532"
-import { AddressData } from "../../types"
+import { GameData } from "../../types"
 
 const mailjet = require("node-mailjet").apiConnect(
   process.env.MAIL_API_KEY,
