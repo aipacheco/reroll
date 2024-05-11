@@ -1,4 +1,4 @@
-import e, { Request, Response } from "express"
+import { Request, Response } from "express"
 import * as Service from "./services"
 
 export const createAddress = async (request: Request, response: Response) => {
@@ -80,6 +80,7 @@ export const getAddressById = async (request: Request, response: Response) => {
     })
   }
 }
+
 export const updateAddress = async (request: Request, response: Response) => {
   const { id } = request.params
   const { body } = request
@@ -92,6 +93,32 @@ export const updateAddress = async (request: Request, response: Response) => {
         success: true,
         data,
         message: "Dirección actualizada correctamente",
+      })
+    }
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}
+
+export const deleteAddress = async (request: Request, response: Response) => {
+  const { id } = request.params
+  const { userId } = request.tokenData
+  try {
+    const { data, error } = await Service.deleteAddress(id, userId)
+    if (data) {
+      return response.status(200).json({
+        success: true,
+        message: "Dirección eliminada correctamente",
       })
     }
     if (error) {

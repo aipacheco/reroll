@@ -13,6 +13,7 @@ export const createAddress = async (body: AddressData, userId: number) => {
     return { data }
   }
 }
+
 export const getAddressByUser = async (userId: number) => {
   const { data, error } = await Repository.getAddressByUser(userId)
   if (error) {
@@ -28,6 +29,7 @@ export const getAddressById = async (id: string) => {
   }
   return { data }
 }
+
 export const updateAddress = async (
   id: string,
   body: AddressData,
@@ -43,4 +45,12 @@ export const updateAddress = async (
     }
     return { data }
   }
+}
+
+export const deleteAddress = async (id: string, userId: number) => {
+  const { data, error } = await Repository.deleteAddress(id, userId)
+  if (error) {
+    return { error }
+  }
+  return { data }
 }

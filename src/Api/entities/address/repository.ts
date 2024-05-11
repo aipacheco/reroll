@@ -59,3 +59,16 @@ export const updateAddress = async (
   const updatedAddress = await address.save()
   return { data: updatedAddress }
 }
+
+export const deleteAddress = async (id: string, userId: number) => {
+  const address = await Address.findOneAndDelete({
+    _id: id,
+    owner: userId,
+  }).exec()
+  if (!address) {
+    return {
+      error: "Dirección no encontrada o no tienes permiso para borrarla",
+    }
+  }
+  return { data: address }
+}

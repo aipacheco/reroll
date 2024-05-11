@@ -9,6 +9,7 @@ addressRouter.post("/", auth,  Controller.createAddress)
 addressRouter.get("/", auth,  Controller.getAddressByUser)
 addressRouter.get("/:id", auth,  Controller.getAddressById)
 addressRouter.put("/:id", auth,  Controller.updateAddress)
+addressRouter.delete("/:id", auth,  Controller.deleteAddress)
 
 
 export default addressRouter
