@@ -12,22 +12,29 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAllCategories = exports.createCategory = void 0;
-const model_1 = __importDefault(require("./model"));
-const createCategory = (name) => __awaiter(void 0, void 0, void 0, function* () {
-    const existingName = yield model_1.default.findOne({ name: name }).exec();
-    if (existingName) {
-        return { error: "La categoría ya existe" };
+exports.auth = void 0;
+const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const auth = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
+    try {
+        const token = (_a = req.headers.authorization) === null || _a === void 0 ? void 0 : _a.split(" ")[1];
+        // console.log(token)
+        if (!token) {
+            return res.status(401).json({
+                success: false,
+                message: "UNAUTHORIZED",
+            });
+        }
+        const decoded = jsonwebtoken_1.default.verify(token, process.env.JWT_SECRET);
+        req.tokenData = decoded;
+        next();
     }
-    const categoryCreated = yield model_1.default.create({ name: name });
-    return { data: categoryCreated };
-});
-exports.createCategory = createCategory;
-const getAllCategories = () => __awaiter(void 0, void 0, void 0, function* () {
-    const categories = yield model_1.default.find().exec();
-    if (categories.length === 0) {
-        return { error: "No existen categorías" };
+    catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "JWT NOT VALID OR MALFORMED",
+            error: error,
+        });
     }
-    return { data: categories };
 });
-exports.getAllCategories = getAllCategories;
+exports.auth = auth;
