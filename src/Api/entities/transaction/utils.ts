@@ -30,7 +30,7 @@ export const sendEmailToSeller = async (
         },
       ],
     })
-    console.log(request.body)
+    // console.log(request.body)
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message)

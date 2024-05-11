@@ -1,6 +1,7 @@
-import e, { Request, Response } from "express"
+import { Request, Response } from "express"
 import * as Service from "./services"
 import { Files } from "../../types"
+
 
 export const createGame = async (request: Request, response: Response) => {
   // console.log("las files", request.files)
@@ -9,7 +10,7 @@ export const createGame = async (request: Request, response: Response) => {
   const files = request.files as Files
   if (files) {
     try {
-      const { data, error } = await Service.createGame(body,userId, files)
+      const { data, error } = await Service.createGame(body, userId, files)
       if (error) {
         return response.status(400).json({
           success: false,
@@ -116,7 +117,7 @@ export const updateGame = async (request: Request, response: Response) => {
 
 export const deleteGame = async (request: Request, response: Response) => {
   const { id } = request.params
-  const { reason} = request.body
+  const { reason } = request.body
   try {
     const { data, error } = await Service.deleteGame(id, reason)
     if (data) {
@@ -147,17 +148,59 @@ export const reserveGame = async (request: Request, response: Response) => {
   const { id } = request.params
   try {
     const { data, error } = await Service.reserveGame(id, userId)
-    if (data) {
+    if (data?.status === "reservado") {
       return response.status(200).json({
         success: true,
         data,
-        message: "Juego reservado correctamente",
+        message: "Juego marcado como reservado",
+      })
+    }
+    if (data?.status === "disponible") {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Juego marcado como disponible",
+      })
+    }
+
+    if (error) {
+      return response.status(400).json({
+        success: false,
+        message: "No se ha podido marcar el juego como reservado",
+        error: error,
+      })
+    }
+  } catch (error) {
+    return response.status(500).json({
+      success: false,
+      message: "Error interno del servidor",
+      details: error instanceof Error ? error.message : error,
+    })
+  }
+}
+export const buyGame = async (request: Request, response: Response) => {
+  const { userId } = request.tokenData
+  const { id } = request.params
+  try {
+    const { data, error } = await Service.buyGame(id, userId)
+    if (data?.status === "vendido") {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Juego marcado como vendido",
+      })
+    }
+    if (data?.status === "disponible") {
+      return response.status(200).json({
+        success: true,
+        data,
+        message: "Juego marcado como disponible",
       })
     }
     if (error) {
       return response.status(400).json({
         success: false,
-        message: "No se ha podido reservar el juego",
+        message: "No se ha podido marcar el juego como vendido",
         error: error,
       })
     }

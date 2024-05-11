@@ -175,3 +175,11 @@ export const reserveGame = async (id: string, userId: number) => {
   }
   return { data }
 }
+
+export const buyGame = async (id: string, userId: number) => {
+  const { data, error } = await Repository.buyGame(id, userId)
+  if (error) {
+    return { error }
+  }
+  return { data }
+}

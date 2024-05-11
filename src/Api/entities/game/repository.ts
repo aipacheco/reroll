@@ -2,7 +2,6 @@ import User from "../user/model"
 import Game from "./model"
 import { ObjectId } from "mongoose"
 
-
 export const createGame = async (
   userId: number,
   name: string,
@@ -112,23 +111,63 @@ export const deleteGame = async (id: string) => {
 }
 
 export const reserveGame = async (id: string, userId: number) => {
-  const game = await Game.findById(id)
-  if (!game) {
-    return { error: "Juego no encontrado" }
+  try {
+    const game = await Game.findById(id)
+    if (!game) {
+      return { error: "Juego no encontrado" }
+    }
+    if (game.author.toString() !== userId.toString()) {
+      return {
+        error:
+          "No puedes cambiar el estado de reserva del juego de otra persona",
+      }
+    }
+    const newStatus = game.status === "disponible" ? "reservado" : "disponible"
+    const updatedGame = await Game.findOneAndUpdate(
+      { _id: id },
+      { status: newStatus },
+      { new: true }
+    )
+    if (!updatedGame) {
+      return { error: "No se ha podido cambiar el estado de reserva del juego" }
+    }
+    return { data: updatedGame }
+  } catch (error) {
+    console.error(error)
+    return {
+      error:
+        "Ha ocurrido un error al intentar cambiar el estado de reserva del juego",
+    }
   }
-  if (game.status !== "disponible") {
-    return { error: "Juego no disponible" }
+}
+
+export const buyGame = async (id: string, userId: number) => {
+  try {
+    const game = await Game.findById(id)
+    if (!game) {
+      return { error: "Juego no encontrado" }
+    }
+    if (game.author.toString() !== userId.toString()) {
+      return {
+        error:
+          "No puedes cambiar el estado de venta del juego de otra persona",
+      }
+    }
+    const newStatus = game.status === "disponible" ? "vendido" : "disponible"
+    const updatedGame = await Game.findOneAndUpdate(
+      { _id: id },
+      { status: newStatus },
+      { new: true }
+    )
+    if (!updatedGame) {
+      return { error: "No se ha podido cambiar el estado de venta del juego" }
+    }
+    return { data: updatedGame }
+  } catch (error) {
+    console.error(error)
+    return {
+      error:
+        "Ha ocurrido un error al intentar cambiar el estado de reserva del juego",
+    }
   }
-  if (game.author.toString() !== userId.toString()) {
-    return { error: "No puedes reservar el juego de otra persona" };
-  }
-  const reservedGame = await Game.findOneAndUpdate(
-    { _id: id },
-    { status: "reservado" },
-    { new: true }
-  )
-  if (!reservedGame) {
-    return { error: "No se ha podido reservar el juego" }
-  }
-  return { data: reservedGame }
 }

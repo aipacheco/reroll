@@ -27,7 +27,7 @@ const GameSchema = new Schema(
     category: { type: Types.ObjectId, ref: "Category" },
     status: {
       type: String,
-      enum: ["disponible", "reservado", "comprado"],
+      enum: ["disponible", "reservado", "vendido"],
       default: "disponible",
     },
   },

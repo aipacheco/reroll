@@ -43,5 +43,6 @@ gameRouter.put(
 )
 gameRouter.delete("/:id", auth, isAdmin, Controller.deleteGame)
 gameRouter.put("/reserve/:id", auth, Controller.reserveGame)
+gameRouter.put("/sell/:id", auth, Controller.buyGame)
 
 export default gameRouter
