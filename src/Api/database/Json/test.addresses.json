@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "663f85a9110788e2fa939a13"
+  },
+  "owner": {
+    "$oid": "6639ead0982f079ee307a0d1"
+  },
+  "name": "Ana",
+  "lastName": "Pacheco García",
+  "streetAddress": "Bonrepós i Mirambell 17 esc 4 pta 3",
+  "city": "Paiporta",
+  "province": "Valencia",
+  "cp": 46200,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fb1fd026010c641a109bd"
+  },
+  "owner": {
+    "$oid": "663fad5c026010c641a108b9"
+  },
+  "name": "Siro",
+  "lastName": "Casquete Guillem",
+  "streetAddress": "Avda Fernando Abril Martorell 2 esc 7 pta 5",
+  "city": "Valencia",
+  "province": "Valencia",
+  "cp": 46026,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fb56a026010c641a10a93"
+  },
+  "owner": {
+    "$oid": "663faaa2026010c641a10865"
+  },
+  "name": "Sargento",
+  "lastName": "Tárrega",
+  "streetAddress": "Partida San Dunguero, 20",
+  "city": "Motilla del Palancar",
+  "province": "Cuenca",
+  "cp": 28080,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66408962026010c641a110e0"
+  },
+  "owner": {
+    "$oid": "663faaa2026010c641a10865"
+  },
+  "name": "Alex",
+  "lastName": "Barrantes",
+  "streetAddress": "Calle Piruleta, 1",
+  "city": "Gominola",
+  "province": "Lugo",
+  "cp": 9384,
+  "__v": 0
+}]
