@@ -1,4 +1,4 @@
-# Proyecto final - Compra-venta de juegos entre particulares.
+# Proyecto final - Compra-venta de juegos entre particulares
 
 <img src="./src/assets/Home.png" alt="">
 
@@ -42,6 +42,28 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 ## Endpoints
 
 <details>
+  <summary>Zona para profesores ℹ️</summary>
+  <ol>
+    <li>Usuario admin: 
+
+   ```
+rerollgamesales@gmail.com.com
+password: administrador
+```
+</li>
+    <li>Usuario de prueba
+      
+   ```
+alex@gmail.com
+password: 123456789
+```
+  </li>
+   <li>
+   A tener en cuenta: el envío de emails se realiza a direcciones reales, por lo que para poder comprobarlo se recomienda crear un anuncio con un usuario con un email del que seas propietario, así como realizar una compra a un usuario que hayamos creado con un email del que seas propietario y eliminar un anuncio de un usuario del que seas propietario.
+  </ol>
+</details>
+
+<details>
 <summary>Endpoints</summary>
 
 - AUTH
@@ -83,7 +105,7 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
             GET https://reroll-back.zeabur.app/api/user
 
-    El usuario tiene que ser admin para ver todos los usuarios {"email":"rerollgamesales@gmail.com", "password":"administrador"}
+    El usuario tiene que ser admin para ver todos los usuarios
 
   - VER USUARIO
 
@@ -108,7 +130,7 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
         DELETE https://reroll-back.zeabur.app/api/user/:id
 
     El usuario deberá ser admin para poder borrar un usuario específico.
-    {"email":"rerollgamesales@gmail.com", "password":"administrador"}
+
 
 - GAME
 
@@ -138,7 +160,7 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
         key: playersMax type: text value: 4
 
-        key: category type: text value: "example category"
+        key: category type: text value: "EL ID DE LA CATEGORÍA"
 
         key: price type: text value: 50
 
@@ -148,7 +170,7 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
         key: image3 type: file value: "example3.jpg"
 
-    Creación de un nuevo anuncio.
+    Creación de un nuevo anuncio, el usuario deberá estar logado. Al terminar la operación recibirá un email confirmándole los datos de su anuncio.
 
   - ACTUALIZAR JUEGO
 
@@ -164,7 +186,7 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
         key: playersMax type: text value: 4
 
-        key: category type: text value: "example category"
+        key: category type: text value: "EL ID DE LA CATEGORÍA"
 
         key: price type: text value: 50
 
@@ -190,7 +212,6 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
     Sólo usuario admin. Se borra un juego, indicándole el motivo por el que se ha borrado. Se le envía e-mail al anunciante con el motivo de la eliminación.
 
-    {"email":"rerollgamesales@gmail.com", "password":"administrador"}
 
   - RESERVAR JUEGO
 
@@ -269,9 +290,6 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
     Actualización de una dirección del usuario que está logado.
 
-    ```
-
-    ```
 
   - BORRAR DIRECCIÓN
 
@@ -301,7 +319,6 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
     Sólo usuario admin. Creación de nuevas categorías.
 
-    {"email":"rerollgamesales@gmail.com", "password":"administrador"}
 
 - TRANSACTION
 
