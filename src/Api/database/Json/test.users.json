@@ -6,7 +6,7 @@
   "email": "alex@gmail.com",
   "password": "$2b$12$Q8dn7vRDLNDoWB7DVT6sF.CfJLwk.VmMOnb5YoR5IwhcQw294JYDe",
   "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
-  "description": "¡Hola! Soy nuevo en re:roll!",
+  "description": "¡Hola! Soy nuevo en re-roll!",
   "role": "user",
   "chats": [],
   "saved": [],
@@ -46,7 +46,7 @@
   "email": "admin@gmail.com",
   "password": "$2b$12$WLPTrFlWFgKMaSspsXx4Y.eOBP9tqB2ss6jm2V3VcHXiBzOsS8T4y",
   "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
-  "description": "¡Hola! Soy nuevo en re:roll!",
+  "description": "¡Hola! Soy nuevo en re-roll!",
   "role": "admin",
   "chats": [],
   "saved": [],
@@ -66,7 +66,7 @@
   "email": "ozzy@gmail.com",
   "password": "$2b$12$mZmVG6Ah8OEtllpvcM5yGO2z0YFIML2HO1p8d.AK8/rwTWTZ9smEq",
   "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715247536/reroll/ygo2kwfqvbsge9oj33fz.jpg",
-  "description": "¡Hola! Soy nuevo en re:roll!",
+  "description": "¡Hola! Soy nuevo en re-roll!",
   "role": "user",
   "chats": [],
   "saved": [],
@@ -186,7 +186,7 @@
   "email": "rerollgamesales@gmail.com",
   "password": "$2b$12$pBcJXFpaLSnKt5nU/u4tQemkYpggOMmktsJvq9yn8zzdS8pYpobSO",
   "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
-  "description": "¡Hola! Soy nuevo en re:roll!",
+  "description": "¡Hola! Soy nuevo en re-roll!",
   "role": "admin",
   "chats": [],
   "saved": [],
@@ -196,5 +196,105 @@
   },
   "updatedAt": {
     "$date": "2024-05-10T01:09:00.632Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fa1d1026010c641a1083a"
+  },
+  "username": "claudia",
+  "email": "klauha@gmail.com",
+  "password": "$2b$12$qHNcL8ZBRhJilNustXPLU.guCzolynOo01kiQTMtOR11F.ZpxldRG",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re-roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-11T16:50:25.218Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T16:50:25.218Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663faaa2026010c641a10865"
+  },
+  "username": "elessartelcontar",
+  "email": "alex.barrantes.cano@gmail.com",
+  "password": "$2b$12$Ll7aMK7/HN0dQCxwUXl2kOEFM.VC9B9dcLvuMGoWJRdn.pKMkz2EW",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715505600/reroll/r4bnd5dxvqrvc9ufgy3h.jpg",
+  "description": "Ahora un 100% más de elfa",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-11T17:28:02.665Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-12T09:20:00.443Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fac8d026010c641a1088c"
+  },
+  "username": "legna",
+  "email": "angela.rodrigo16@gmail.com",
+  "password": "$2b$12$PfVmjHzMFsfDj/DmUOKjherIoiuBqg/DXwvpXqm2pvMZsoWajzpVu",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re-roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-11T17:36:13.945Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T17:36:13.945Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fad5c026010c641a108b9"
+  },
+  "username": "siroruzafa",
+  "email": "siroruzafa@gmail.com",
+  "password": "$2b$12$VWGD6zmLLqX0FFKBxyq5OOKgbS.dy5zIM9Hl4UUCIJQE5crk5/WXO",
+  "avatar": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450600/reroll/qwdc3r6oyzn0y3duvk0n.jpg",
+  "description": "¡Hola! Soy nuevo en re-roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-11T17:39:40.204Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T18:03:21.203Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fd45f026010c641a10d0f"
+  },
+  "username": "marina",
+  "email": "marinaescriva.24@gmail.com",
+  "password": "$2b$12$4RRAscMXmbkWsVQ2gAVc0O..T/yWXCo1ykukfUU6M.kjR0C3ZXOPe",
+  "avatar": "https://res.cloudinary.com/dptbxi3iu/image/upload/v1714633611/reroll/8e65207aca8751179e10e03c_rw_600_ih2nk1_tozov6.png",
+  "description": "¡Hola! Soy nuevo en re-roll!",
+  "role": "user",
+  "chats": [],
+  "saved": [],
+  "address": [],
+  "createdAt": {
+    "$date": "2024-05-11T20:26:07.639Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T20:26:07.639Z"
   }
 }]

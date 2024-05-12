@@ -21,7 +21,7 @@
     "$date": "2024-05-07T08:51:43.512Z"
   },
   "updatedAt": {
-    "$date": "2024-05-07T08:51:43.512Z"
+    "$date": "2024-05-11T12:43:06.462Z"
   }
 },
 {
@@ -42,12 +42,12 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
-  "status": "Reservado",
+  "status": "Disponible",
   "createdAt": {
     "$date": "2024-05-07T08:54:18.243Z"
   },
   "updatedAt": {
-    "$date": "2024-05-07T08:54:18.243Z"
+    "$date": "2024-05-11T21:27:57.347Z"
   }
 },
 {
@@ -666,11 +666,89 @@
   "category": {
     "$oid": "6623c59c9197899613834cc9"
   },
-  "status": "Disponible",
+  "status": "Reservado",
   "createdAt": {
     "$date": "2024-05-10T00:03:58.509Z"
   },
   "updatedAt": {
-    "$date": "2024-05-10T00:03:58.509Z"
+    "$date": "2024-05-12T09:24:03.048Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fb368026010c641a10a21"
+  },
+  "author": {
+    "$oid": "663fad5c026010c641a108b9"
+  },
+  "name": "Farming simulator the board game",
+  "description": "Ojala fuese real.",
+  "playersMin": 1,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450727/reroll/d3qxwm1ukpbi6chxdsyf.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450727/reroll/msgqlltfaijnvfrvcdyu.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450727/reroll/yxuq0uxrtlp3p4rtt38r.jpg",
+  "price": 25,
+  "category": {
+    "$oid": "662f4dea04d1d343c79923dd"
+  },
+  "status": "Vendido",
+  "createdAt": {
+    "$date": "2024-05-11T18:05:28.486Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T18:15:46.370Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "663fb3de026010c641a10a37"
+  },
+  "author": {
+    "$oid": "663faaa2026010c641a10865"
+  },
+  "name": "Guarrohammer 40000",
+  "description": "En el despiadado universo del lejano futuro sólo hay guerra",
+  "playersMin": 2,
+  "playersMax": 4,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450845/reroll/gpf11silux4e4igpno0w.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450845/reroll/poez3ihd3al3rxus90y1.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715450845/reroll/aphle8gh4fhjyssledlm.jpg",
+  "price": 5000,
+  "category": {
+    "$oid": "6639f45d982f079ee307a141"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-11T18:07:26.771Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-11T21:38:43.195Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66408a1d026010c641a110fa"
+  },
+  "author": {
+    "$oid": "663faaa2026010c641a10865"
+  },
+  "name": "Jumanji",
+  "description": "Juega bajo tu propia responsabilidad, la última vez que jugué una partida casi se me llevan los monos a la selva.",
+  "playersMin": 1,
+  "playersMax": 6,
+  "image1": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715505692/reroll/ttk7109u65dkrr5whnll.jpg",
+  "image2": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715505692/reroll/thaztnxvk9jigdr52we9.jpg",
+  "image3": "http://res.cloudinary.com/dptbxi3iu/image/upload/v1715505692/reroll/koyrfkjn28ihkvlbvcju.jpg",
+  "price": 100,
+  "category": {
+    "$oid": "6639f83e982f079ee307a19b"
+  },
+  "status": "Disponible",
+  "createdAt": {
+    "$date": "2024-05-12T09:21:33.137Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-12T09:21:33.137Z"
   }
 }]

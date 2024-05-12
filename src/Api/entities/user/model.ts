@@ -22,7 +22,7 @@ const UserSchema = new Schema(
     },
     description: {
       type: String,
-      default: "¡Hola! Soy nuevo en re:roll!",
+      default: "¡Hola! Soy nuevo en re-roll!",
     },
     role: {
       type: String,
