@@ -1,6 +1,6 @@
 # Proyecto final - Compra-venta de juegos entre particulares.
 
-<img src="./assets/h8ter.png" alt="">
+<img src="./src/assets/Home.png" alt="">
 
 <details>
   <summary>Contenido 📝</summary>
@@ -28,7 +28,7 @@ El backend de esta web-app está desplegado en [Enlace a Zeabur](https://reroll-
 
 Este proyecto requería la creación de una API funcional en Node JS mediante la cual los usuarios pudieran realizar todas las gestiones necesarias para la compra-venta de juegos de segunda mano entre particulares.
 
-<img src="./assets/diagramaMongo.png" alt="">
+<img src="./src/assets/diagramaReroll.png" alt="">
 
 ## Instalación en local
 
@@ -271,6 +271,8 @@ Este proyecto requería la creación de una API funcional en Node JS mediante la
 
     ```
 
+    ```
+
   - BORRAR DIRECCIÓN
 
         DELETE https://reroll-back.zeabur.app/api/address/:id
@@ -339,7 +341,25 @@ Tecnologías utilizadas:
     />
 </a>
 
+Librerías externas:
+
+    Mailjet
+
+<div align="center">
+<a href="https://www.mailjet.com/es/"> 
+<img src="https://logowik.com/content/uploads/images/mailjet980.logowik.com.webp" style="width: 10em; height: 8em;">
  </div>
+ </a>
+</div>
+
+    Cloudinary
+
+<div align="center">
+<a href="https://cloudinary.com/"> 
+<img src="https://logowik.com/content/uploads/images/cloudinary6366.logowik.com.webp" style="width: 10em; height: 8em;">
+ </div>
+ </a>
+</div>
 
 ## Creación del proyecto
 
