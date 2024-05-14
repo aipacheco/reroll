@@ -328,11 +328,12 @@ password: 123456789
 
   ```js
       {
-          "game": "6635f1ff346492f8f55f9ec8"
+          "game": "6635f1ff346492f8f55f9ec8",
+          "address": "663faaa2026010c641a10865"
       }
   ```
 
-  Se le pasa únicamente el id del Juego. El id del Comprador se recoge del token, y el id del Vendedor se recoge de la BBDD al buscar por el juego. Al realizar una transacción, se envía un correo electrónico al vendedor informándole de los datos (nombre y dirección) del usuario que ha realizado la compra.
+  Se le pasa el id del juego y de la dirección del comprador. El id del comprador se recoge del token, y el id del vendedor se recoge de la BBDD al buscar por el juego. Al realizar una transacción, se envía un correo electrónico al vendedor informándole de los datos (nombre y dirección) del usuario que ha realizado la compra.
 
     </details>
 
